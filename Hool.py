@@ -122,7 +122,7 @@ def show_hool_bolovsruulalt():
                 if chart_df_list:
                     final_df = pd.concat(chart_df_list, ignore_index=True)
 
-                    bar = alt.Chart(final_df).mark_bar(size=80).encode(
+                    bar = alt.Chart(final_df).mark_bar(size=15).encode(
                         x=alt.X("Column:N", title="Багана"),
                         y=alt.Y("Count:Q", title="Тоо хэмжээ", stack='zero'),
                         color=alt.Color("Value:N", title="Утга", scale=alt.Scale(domain=['0', '1'], range=['blue', 'red'])),
@@ -220,7 +220,7 @@ def show_hool_bolovsruulalt():
                 with col4:
                     st.subheader("📊 Сонгосон багануудын Stacked Bar Chart")
                
-                bar2 = alt.Chart(filtered_df).mark_bar(size=80).encode(
+                bar2 = alt.Chart(filtered_df).mark_bar(size=15).encode(
                     x=alt.X('column_id:N', title='Sheet | Багана', sort=None),
                     y=alt.Y('count:Q', title='Тоо ширхэг', stack='zero'),
                     color=alt.Color('value:N', title='Утга', scale=alt.Scale(domain=['0','1'], range=['blue','red'])),
