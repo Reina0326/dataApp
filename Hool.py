@@ -122,7 +122,7 @@ def show_hool_bolovsruulalt():
                 if chart_df_list:
                     final_df = pd.concat(chart_df_list, ignore_index=True)
 
-                    bar = alt.Chart(final_df).mark_bar(size=80).encode(
+                    bar = alt.Chart(final_df).mark_bar(size=30).encode(
                         x=alt.X("Column:N", title="Багана"),
                         y=alt.Y("Count:Q", title="Тоо хэмжээ", stack='zero'),
                         color=alt.Color("Value:N", title="Утга", scale=alt.Scale(domain=['0', '1'], range=['blue', 'red'])),
