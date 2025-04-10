@@ -220,7 +220,7 @@ def show_hool_bolovsruulalt():
                 with col4:
                     st.subheader("📊 Сонгосон багануудын Stacked Bar Chart")
                
-                bar2 = alt.Chart(filtered_df).mark_bar(size=15).encode(
+                bar2 = alt.Chart(filtered_df).mark_bar(size=25).encode(
                     x=alt.X('column_id:N', title='Sheet | Багана', sort=None),
                     y=alt.Y('count:Q', title='Тоо ширхэг', stack='zero'),
                     color=alt.Color('value:N', title='Утга', scale=alt.Scale(domain=['0','1'], range=['blue','red'])),
