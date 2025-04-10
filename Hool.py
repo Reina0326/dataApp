@@ -3,6 +3,7 @@ import pandas as pd
 import altair as alt
 from PIL import Image
 import os
+st.set_page_config(layout="wide")
 
 def show_hool_bolovsruulalt():
     st.markdown('<style>div.block-container{padding-top:3rem;}</style>', unsafe_allow_html=True)
